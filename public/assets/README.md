@@ -24,8 +24,6 @@ Dépose ici tes fichiers avec EXACTEMENT
 
 <video controls src="WhatsApp Video 2026-09-02 at 11.42.16.mp4" title="Title"></video>
 
-2
-
 ![alt text](<coiffure-royale (1).jpg>) ![alt text](<coiffure-royale (5).jpg>) ![alt text](<coiffure-royale (4).jpg>) ![alt text](1a67d67a2-37b9-4625-b9b7-304c4c0aca8d.png)
 
 
@@ -42,7 +40,7 @@ galerie-sculpture.jpg | galerie-village.jpg | galerie-rite.jpg | galerie-carte54
 galerie-artisanat.jpg | galerie-masque-sande.jpg | galerie-cases.jpg | galerie-masque-perles.jpg |
 film-vodun.mp4 | film-elegance.mp4
 
-
+![alt text](image.png)
 
 
 

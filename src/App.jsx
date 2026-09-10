@@ -1,5 +1,5 @@
-import React from 'react';
-import { LangProvider } from './i18n.jsx';
+import React, { useEffect } from 'react';
+import { LangProvider, useLang } from './i18n.jsx';
 import { useHashRoute, useRevealOnScroll } from './hooks.js';
 import { Loader, ProgressBar, Header, Footer } from './components/chrome.jsx';
 import Home from './pages/Home.jsx';
@@ -11,6 +11,9 @@ import Galerie from './pages/Galerie.jsx';
 import Bassam from './pages/Bassam.jsx';
 import Billetterie from './pages/Billetterie.jsx';
 import Partenaires from './pages/Partenaires.jsx';
+import Presse from './pages/Presse.jsx';
+import Contact from './pages/Contact.jsx';
+import InfosPratiques from './pages/InfosPratiques.jsx';
 
 const PAGES = {
   '/': Home,
@@ -22,6 +25,9 @@ const PAGES = {
   '/bassam': Bassam,
   '/billetterie': Billetterie,
   '/partenaires': Partenaires,
+  '/presse': Presse,
+  '/contact': Contact,
+  '/infos-pratiques': InfosPratiques,
 };
 
 function Router() {
@@ -33,9 +39,7 @@ function Router() {
       <Loader />
       <ProgressBar />
       <Header route={route} />
-      <main>
-        <Page />
-      </main>
+      <main><Page /></main>
       <Footer />
     </React.Fragment>
   );
