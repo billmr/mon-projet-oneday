@@ -428,3 +428,15 @@ header.scrolled .brand-tag{opacity:0;transform:translateY(-4px);height:0;overflo
   .brand-badge::after{inset:-4px}
   .brand-badge::before{width:12px;height:12px}
 }
+
+/* ========= FORMULAIRE : état erreur + bouton envoi ========= */
+.form-error{border:2px solid var(--terra);background:rgba(214,75,39,.08);padding:16px 18px;text-align:center;font-weight:700;margin-bottom:18px;font-size:.92rem}
+.form-error a{color:var(--terra);text-decoration:underline;word-break:break-all}
+.pform button:disabled{opacity:.6;cursor:wait}
+
+/* ========= CARTE DE CONFIRMATION (le formulaire disparait) ========= */
+.confirm-card{background:var(--papier);border:2px solid var(--noir);box-shadow:14px 14px 0 var(--or);padding:60px 40px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:20px;animation:fadeUp .6s var(--ease)}
+.confirm-badge{width:76px;height:76px;border-radius:50%;background:var(--foret);color:var(--ivoire);display:flex;align-items:center;justify-content:center;font-family:var(--disp);font-weight:900;font-size:2rem;border:2px solid var(--noir);box-shadow:6px 6px 0 var(--or)}
+.confirm-card h3{font-family:var(--disp);font-weight:900;text-transform:uppercase;font-size:clamp(1.3rem,3vw,2rem);line-height:1.1}
+.confirm-card p{font-family:var(--ital);font-style:italic;font-size:1.1rem;color:var(--oxblood);max-width:46ch}
+.confirm-card .cta{margin-top:8px}
