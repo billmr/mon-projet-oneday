@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: evenements
+    label: "Événements"
+    label_singular: "Événement"
+    folder: content/evenements
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre (FR)", name: title_fr, widget: string }
+      - { label: "Titre (EN)", name: title_en, widget: string }
+      - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { label: "Image", name: image, widget: image }
+      - { label: "Tag (FR)", name: tag_fr, widget: string }
+      - { label: "Tag (EN)", name: tag_en, widget: string }
+      - { label: "Résumé (FR)", name: excerpt_fr, widget: text }
+      - { label: "Résumé (EN)", name: excerpt_en, widget: text }
+
+  - name: actualites
+    label: "Actualités"
+    label_singular: "Actu"
+    folder: content/actualites
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Titre (FR)", name: title_fr, widget: string }
+      - { label: "Titre (EN)", name: title_en, widget: string }
+      - { label: "Date", name: date, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { label: "Image", name: image, widget: image }
+      - { label: "Tag (FR)", name: tag_fr, widget: string }
+      - { label: "Tag (EN)", name: tag_en, widget: string }
+      - { label: "Résumé (FR)", name: excerpt_fr, widget: text }
+      - { label: "Résumé (EN)", name: excerpt_en, widget: text }
